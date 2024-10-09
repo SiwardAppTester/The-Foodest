@@ -19,6 +19,7 @@ body {
     background-color: var(--alice-blue);
 }
 
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -406,45 +407,46 @@ footer nav a:hover {
     text-decoration: underline;
 }
 
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+    .feature {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
 @media (max-width: 768px) {
     header .container {
         flex-direction: column;
     }
-
     nav ul {
         margin-top: 20px;
     }
-
     .hero {
         padding: 60px 0;
     }
-
-    h1 {
-        font-size: 36px;
-    }
-
-    .feature {
-        flex-basis: calc(50% - 20px);
-    }
-
     .earn-cards {
         flex-direction: column;
     }
-
     .card {
         margin-bottom: 20px;
     }
-
     footer .container {
         flex-direction: column;
         text-align: center;
     }
+}
 
-    footer nav {
-        margin-top: 20px;
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 28px;
     }
-
-    footer nav a {
-        margin: 0 10px;
+    .feature h3 {
+        font-size: 18px;
+    }
+    .feature p {
+        font-size: 14px;
     }
 }
