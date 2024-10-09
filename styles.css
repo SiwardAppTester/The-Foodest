@@ -1,0 +1,450 @@
+:root {
+    --caribbean-current: #006d77;
+    --tiffany-blue: #83c5be;
+    --alice-blue: #edf6f9;
+    --white: #ffffff;
+    --dark-text: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--dark-text);
+    background-color: var(--alice-blue);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: var(--caribbean-current);
+    color: var(--white);
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    margin-right: 10px; /* Space between logo image and text */
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--white);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: var(--alice-blue);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--tiffany-blue);
+    text-decoration: underline;
+}
+
+.hero {
+    background: linear-gradient(135deg, var(--caribbean-current), var(--tiffany-blue));
+    color: var(--white);
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 42px; /* Adjusted from 48px to 42px for better balance */
+    margin-bottom: 15px; /* Slightly reduce margin */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hero p {
+    font-size: 20px; /* Increase size for better readability */
+    margin-bottom: 25px; /* Adjust spacing for balance */
+}
+
+
+form {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input[type="email"] {
+    flex-grow: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    background-color: var(--white);
+    color: var(--dark-text);
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: var(--caribbean-current);
+    color: var(--white);
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--tiffany-blue);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.floating-cta {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--caribbean-current);
+    color: var(--white);
+    padding: 12px 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000; /* Ensures the button stays on top of other elements */
+}
+
+.floating-cta:hover {
+    background-color: var(--tiffany-blue);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+.terms {
+    font-size: 14px !important;
+    margin-top: 2px !important;
+    color: var(--alice-blue);
+    text-align: center;
+}
+
+.terms a {
+    color: var(--tiffany-blue);
+    text-decoration: underline;
+    font-weight: bold; /* Keeps the link noticeable */
+}
+
+
+#signup-message {
+    font-size: 16px; /* Adjust the size to your preference */
+    margin-top: 10px; /* Add some space above the message */
+    color: #ffffff; /* White color as per your request */
+    text-align: center; /* Align text to center for better appearance */
+}
+
+section {
+    padding: 80px 0;
+}
+
+h2 {
+    font-size: 24px;
+    color: #006d77;
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: var(--caribbean-current);
+}
+
+#how-it-works {
+    background-color: var(--white);
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px; /* Add space between the items */
+}
+
+.step {
+    flex-basis: 22%; /* Adjust as needed to fit four steps evenly */
+    text-align: center;
+    margin-bottom: 40px;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.step:hover {
+    transform: translateY(-5px);
+    background-color: var(--tiffany-blue);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.step-icon {
+    width: 80px;
+    height: 80px;
+    background-color: var(--tiffany-blue);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    font-size: 32px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.step:hover .step-icon {
+    background-color: var(--caribbean-current);
+    transform: scale(1.1);
+}
+
+
+#why-foodest {
+    background-color: var(--alice-blue);
+    padding: 80px 0;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feature {
+    flex-basis: calc(25% - 20px);
+    text-align: center;
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+    background-color: var(--alice-blue);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+}
+
+.feature-icon svg {
+    width: 40px;
+    height: 40px;
+    color: var(--caribbean-current);
+}
+
+.feature h3 {
+    color: var(--caribbean-current);
+    margin-bottom: 10px;
+}
+
+.feature p {
+    color: var(--dark-text);
+    font-size: 14px;
+}
+
+#earn-while-you-dine {
+    background-color: var(--white);
+    padding: 80px 0;
+}
+
+#earn-while-you-dine h2 {
+    color: var(--caribbean-current);
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.earn-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.card {
+    flex-basis: 30%;
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: var(--alice-blue);
+}
+
+.card i {
+    font-size: 48px;
+    color: var(--caribbean-current);
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    color: var(--caribbean-current);
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: var(--dark-text);
+    font-size: 16px;
+}
+
+.reward-tiers {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.reward-tiers h3 {
+    color: var(--caribbean-current);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.tier {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: var(--alice-blue);
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tier:hover {
+    background-color: var(--tiffany-blue);
+    color: var(--white);
+}
+
+.stars {
+    margin-right: 15px;
+}
+
+.icon-star {
+    color: var(--tiffany-blue);
+    font-size: 24px;
+}
+
+.tier span {
+    color: var(--dark-text);
+    font-size: 16px;
+}
+
+footer {
+    background-color: var(--caribbean-current);
+    color: var(--white);
+    padding: 30px 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer nav a {
+    color: var(--alice-blue);
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+footer nav a:hover {
+    color: var(--tiffany-blue);
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 20px;
+    }
+
+    .hero {
+        padding: 60px 0;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .feature {
+        flex-basis: calc(50% - 20px);
+    }
+
+    .earn-cards {
+        flex-direction: column;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer nav {
+        margin-top: 20px;
+    }
+
+    footer nav a {
+        margin: 0 10px;
+    }
+}

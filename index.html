@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodest - Discover & Share Great Food</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/foodest.logo.png" alt="Foodest Logo" class="logo-image">
+                <span>Foodest</span>
+            </div>                   
+            <nav>
+                <ul>
+                    <li><a href="#how-it-works">How it Works</a></li>
+                    <li><a href="#why-foodest">Why Foodest</a></li>
+                    <li><a href="#earn-while-you-dine">Earn While You Dine</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="email-signup" class="hero">
+            <div class="container">
+                <h1>Discover & Share Great Food</h1>
+                <p>Review, earn rewards, and unlock exclusive dining offers!</p>
+                <form id="email-form">
+                    <input type="email" id="email-input" placeholder="Enter your email" required>
+                    <button type="submit"><i class="fas fa-envelope"></i> Sign Up</button>
+                </form>
+                <p id="signup-message"></p>
+                <p class="terms">By signing up, you agree to our <a href="#"><i class="fas fa-file-contract"></i> Terms & Conditions</a></p>
+            </div>
+        </section>
+        <section id="how-it-works">
+            <div class="container">
+                <h2>How it Works</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-icon"><i class="fas fa-user-plus"></i></div>
+                        <h3>Sign Up</h3>
+                        <p>Create your Foodest account</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon"><i class="fas fa-utensils"></i></div>
+                        <h3>Dine Out</h3>
+                        <p>Visit participating restaurants</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon"><i class="fas fa-pen"></i></div>
+                        <h3>Review</h3>
+                        <p>Share your dining experience</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon"><i class="fas fa-gift"></i></div>
+                        <h3>Earn</h3>
+                        <p>Get rewards for your reviews</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="why-foodest">
+            <div class="container">
+                <h2>Why Foodest?</h2>
+                <div class="features">
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3>Video Reviews</h3>
+                        <p>Share your experience visually</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Rate & Review</h3>
+                        <p>Give detailed feedback</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-tag"></i>
+                        </div>
+                        <h3>Exclusive Discounts</h3>
+                        <p>Access special offers</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3>Earn Rewards</h3>
+                        <p>Get points for your activity</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="earn-while-you-dine">
+            <div class="container">
+                <h2>Earn While You Dine</h2>
+                <div class="earn-cards">
+                    <div class="card">
+                        <i class="fas fa-video"></i>
+                        <h3>Create</h3>
+                        <p>Share your dining experiences through video reviews</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>Inspire</h3>
+                        <p>Help others discover great restaurants</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-award"></i>
+                        <h3>Earn</h3>
+                        <p>Get rewarded for your influential reviews</p>
+                    </div>
+                </div>
+                <div class="reward-tiers">
+                    <h3><i class="fas fa-medal"></i> Reward Tiers</h3>
+                    <div class="tier">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span>5 conversions: Free appetizer</span>
+                    </div>
+                    <div class="tier">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span>10 conversions: Free dinner for two</span>
+                    </div>
+                    <div class="tier">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span>25+ conversions: VIP experience</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Foodest. All rights reserved.</p>
+            <nav>
+                <a href="#"><i class="fas fa-shield-alt"></i> Privacy Policy</a>
+                <a href="#"><i class="fas fa-file-alt"></i> Terms of Service</a>
+                <a href="#"><i class="fas fa-envelope"></i> Contact Us</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
