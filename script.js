@@ -40,6 +40,12 @@ document.getElementById('email-form').addEventListener('submit', function(e) {
     });
 });
 
+document.getElementById('menu-icon').addEventListener('click', function() {
+    const mobileNav = document.getElementById('mobile-nav');
+    mobileNav.classList.toggle('active');
+});
+
+
 // Smooth scroll function
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
