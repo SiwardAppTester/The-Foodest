@@ -19,7 +19,6 @@ body {
     background-color: var(--alice-blue);
 }
 
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -175,6 +174,7 @@ button:hover {
 section {
     padding: 80px 0;
 }
+
 
 h2 {
     font-size: 24px;
@@ -407,46 +407,63 @@ footer nav a:hover {
     text-decoration: underline;
 }
 
-/* Media Queries for Responsive Design */
-@media (max-width: 1024px) {
-    .hero h1 {
-        font-size: 36px;
-    }
-    .feature {
-        flex-basis: calc(50% - 20px);
-    }
-}
-
 @media (max-width: 768px) {
+    header {
+        padding: 10px 0; /* Reduce the padding */
+    }
+
+    .logo-image {
+        width: 30px; /* Smaller logo size for mobile */
+        height: 30px;
+        margin-right: 5px;
+    }
+
+    .logo span {
+        font-size: 20px; /* Reduce font size for mobile */
+    }
+
     header .container {
-        flex-direction: column;
+        flex-direction: column; /* Stack the logo and navigation vertically */
+        align-items: center; /* Center the content */
     }
+
     nav ul {
-        margin-top: 20px;
+        flex-direction: column; /* Stack links vertically */
+        align-items: center; /* Center the links */
+        margin-top: 10px; /* Add some space between the logo and nav */
     }
-    .hero {
-        padding: 60px 0;
+
+    nav ul li {
+        margin: 5px 0; /* Reduce space between links */
     }
-    .earn-cards {
-        flex-direction: column;
+
+    nav ul li a {
+        font-size: 16px; /* Smaller font size for links */
     }
-    .card {
+
+    .hero h1 {
+        font-size: 32px; /* Adjust the size for a better fit */
+        margin-bottom: 10px;
+    }
+
+    .hero p {
+        font-size: 18px; /* Adjust paragraph size */
         margin-bottom: 20px;
     }
-    footer .container {
-        flex-direction: column;
-        text-align: center;
-    }
-}
 
-@media (max-width: 480px) {
-    .hero h1 {
-        font-size: 28px;
+    form {
+        max-width: 100%; /* Make the form take the full width */
+        padding: 0 10px; /* Add some padding for better spacing */
     }
-    .feature h3 {
-        font-size: 18px;
+
+    .floating-cta {
+        font-size: 14px; /* Smaller CTA button */
+        padding: 10px 16px; /* Adjust padding */
+        bottom: 15px; /* Adjust positioning */
+        right: 15px;
     }
-    .feature p {
-        font-size: 14px;
+
+    .terms {
+        font-size: 12px; /* Smaller terms text */
     }
 }
